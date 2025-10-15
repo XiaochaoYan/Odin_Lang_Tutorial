@@ -15,6 +15,13 @@ main :: proc() {
     fmt.printfln("What is 2 x 2 ?")
     fmt.printfln("%d",cross(2,2))
 
+    fmt.printfln("What is 1 + (2 x 2) ?")
+    fmt.printfln("%d",plus(1,cross(2,2)))
+    //这条代码等于
+    // result_2x2 := cross(2,2)
+    // result_1plus4 := plus(1,4)
+    // fmt.printfln("%d",result_1plus4)
+    // 尝试选中这段文字 然后按下 Ctrl + / (如果在使用VSCode)
 }
 
 
